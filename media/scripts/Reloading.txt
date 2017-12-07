@@ -1,0 +1,43 @@
+module Reloading{
+/**Items**/
+item ACReloadingKit{
+	Weight = 2,
+	Type = Normal,
+	DisplayName = Reloading Kit,
+	icon = ACReloadingBench,
+}
+
+/**Recipes**/
+recipe Create Pistol Ammo{
+GunPowder=1,
+keep ACReloadingKit,
+	Result: BulletsBox,
+	Time: 500,
+	Category: Reloading,
+}
+
+recipe Create Shotgun Ammo{
+GunPowder=2,
+keep ACReloadingKit,
+	Result: ShotgunShellsBox,
+	Time: 400,
+	Category: Reloading,
+}
+
+recipe Create Hunting Rifle Ammo{
+GunPowder=10,
+keep ACReloadingKit,
+	Result: 308Box,
+	Time: 400,
+	Category: Reloading,
+}
+
+
+recipe Create Varmint Rifle Ammo{
+GunPowder=2,
+keep ACReloadingKit,
+	Result: 223Box,
+	Time: 400,
+	Category: Reloading,
+}
+}

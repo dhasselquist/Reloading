@@ -1,18 +1,18 @@
 module Base{
 
-    recipe Gather Gunpowder
-    {
-       Bullets9mm/ShotgunShells/223Bullets/308Bullets,
+	recipe Gather Gunpowder
+	{
+		Bullets9mm/ShotgunShells/223Bullets/308Bullets,
 
-       Result:GunPowder,
-       Time:30.0,
-	Obsolete: true
-    }
-recipe Gather Gunpowder{
-Bullets9mm,
-Result:GunPowder,
-Time:30.0,
-Override:true,
-}
+			Result:GunPowder,
+			Time:30.0,
+			Obsolete: true
+	}
+	recipe Gather Gunpowder{
+		Bullets9mm,
+			Result:GunPowder,
+			Time:30.0,
+			Override:true,
+	}
 
 }

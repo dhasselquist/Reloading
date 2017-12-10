@@ -10,36 +10,68 @@ module Reloading{
 	recipe Create Pistol Ammo{
 		GunPowder=1,
 			keep ACReloadingKit,
-			Result: BulletsBox,
-			Time: 500,
+			Result: Bullets9mm=1,
+			Time: 200,
 			Category: Reloading,
 	}
 	recipe Create Shotgun Ammo{
 		GunPowder=2,
 			keep ACReloadingKit,
-			Result: ShotgunShellsBox,
-			Time: 400,
-			Category: Reloading,
-	}
-	recipe Create Hunting Rifle Ammo{
-		GunPowder=10,
-			keep ACReloadingKit,
-			Result: 308Box,
-			Time: 400,
+			Result: ShotgunShells,
+			Time: 200,
 			Category: Reloading,
 	}
 	recipe Create Varmint Rifle Ammo{
 		GunPowder=2,
 			keep ACReloadingKit,
-			Result: 223Box,
-			Time: 400,
+			Result: 223Bullets,
+			Time: 200,
+			Category: Reloading,
+	}	
+	recipe Create Hunting Rifle Ammo{
+		GunPowder=10,
+			keep ACReloadingKit,
+			Result: 308Bullets,
+			Time: 200,
 			Category: Reloading,
 	}
+
 	recipe Recycle Pistol Ammo{
-		BulletsBox,
+		Bullets9mm=10,
 			keep ACReloadingKit,
 			Result: GunPowder,
 			Time: 100,
 			Category: Reloading,
+	}
+		recipe Recycle Shotgun Shells{
+		ShotgunShells=5,
+			keep ACReloadingKit,
+			Result: GunPowder,
+			Time: 100,
+			Category: Reloading,
+	}
+		recipe Recycle Varmint Ammo{
+		223Bullets=5,
+			keep ACReloadingKit,
+			Result: GunPowder,
+			Time: 100,
+			Category: Reloading,
+	}	
+		recipe Recycle Hunting Ammo{
+		308Bullets,
+			keep ACReloadingKit,
+			Result: GunPowder,
+			Time: 100,
+			Category: Reloading,
+	}
+	recipe Create Reloading Kit{
+        MetalPipe,
+        Aluminum,
+        SheetMetal,
+        MortarPestle,
+        WoodenStick,
+        Result: ACReloadingKit,
+        Time:500,
+        Category: Reloading,
 	}
 }
